@@ -1,0 +1,387 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    font-style: normal;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+    nav{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) ;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #fff;
+    }
+    .navBar{
+    max-width: 1200px;
+    padding: 0 1rem 0.5rem;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .navBar ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    }
+    .navBar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 1.25rem;
+    border-bottom: 2px solid transparent;
+    }
+    .navBar ul li a:hover{
+    border-bottom: 2px solid black;
+    }
+    .menuBar{
+      color: black;
+      font-size: 1.6rem;
+      display: none;
+      padding-top: 1.25rem;
+    }
+    .listItems{
+      transition: all .4s;
+    }
+    
+
+
+/* Home Page */
+
+
+.homePage{
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#homeImg {
+    width: 50%;
+}
+
+#homeImg img{
+    width: 100%;
+}
+
+#homeText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+#homeText span{
+    margin-top: 5px;
+    padding: 6.5px 10px;
+    background-color: #149f39;
+    color: white;
+    font-weight: 300;
+    transition: 1s ease;
+
+}
+#homeText h1{
+    font-size: 4.25rem;
+    font-weight: 400;
+    margin: 1.25rem 0px;
+    transition: 0.4s ease;
+
+}
+#homeText p{
+    font-weight: 300;
+    line-height: 1.4;
+    transition: 1s ease;
+
+    
+}
+#homeText button{
+    margin-top: 1.25rem;
+    padding: .6rem 1rem;
+    border: none;
+    background-color: #ffc066;
+    transition: 1s ease;
+
+
+}
+#homeText button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in;
+}
+
+#overview , #services , #menu , #contact-us{
+
+    scroll-margin-top: 5rem;
+
+}
+
+
+/* Offer Section */
+
+.container{
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.boxOne{
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 33%;
+    transition: 0.3s ease;
+
+}
+.boxOne img{
+    margin-right: 1rem;
+    width: 30%;
+}
+.boxOne h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.boxOne p{
+    text-align: start;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.boxOne:hover{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.15) ;
+    cursor: pointer;
+}
+#devide{
+    max-width: 72rem;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Menu Section */
+
+.menuSec{
+    max-width: 72rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.menuSec button{
+    padding: 6px 10px;
+    margin: 2.5rem 0;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    background-color: #149f39;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.menuSec button:hover{
+
+    background-color: rgb(20, 159, 57, 0.8);
+    cursor: pointer;
+
+}
+
+.menuSec h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.grid{
+    height: 130vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 30% 30% 30%;
+    column-gap: 8px;
+    row-gap: 12px;
+}
+.grid img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.grid img:hover{
+    transform: scale(1.04);
+    transition: 0.3s ease ;
+}
+#one{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#two{
+    grid-row: 1/3;
+}
+#seven{
+    grid-row: 2/4;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #fff0db;
+}
+.foot{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.footBox{
+    padding: 1rem;
+}
+.foot p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: gray;
+    font-weight: 600;
+}
+.foot li{
+    list-style: none;
+    line-height: 1.6;
+}
+.foot li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+.foot input {
+    padding: 6px 46px;
+    margin: 4px 0px 10px 0px;
+}
+.foot i{
+    font-size: 32px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: 0.2s ease;
+}
+.foot li a:hover{
+    border-bottom: 2px solid black;
+}
+.footBox div i:hover{
+    transform: scale(1.08);
+}
+
+
+@media(max-width: 960px){
+    #homeText h1{
+        font-size: 3.25rem;
+    }
+    .boxOne h3{
+        font-size: .8rem;
+    }
+    .boxOne p{
+        font-size: 0.66rem;
+    }
+    .boxOne img{
+        margin-right: .8rem;
+        width: 25%;
+    }
+}
+
+@media(max-width: 750px){
+.navBar ul{
+    background-color: #ffc066;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 89px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+}
+.navBar ul li{
+    padding: 13px;
+}
+.menuBar{
+    display: block;
+}
+
+#homeText h1{
+    font-size: 2.4rem;
+}
+#homeText span{
+    padding: 6px;
+    font-size: 0.7rem;
+}
+#homeText p{
+    font-size: .6rem;
+    letter-spacing: 0.6px;
+}
+#homeText button{
+    padding: .3rem .6rem;
+}
+.homePage {
+    gap: 2rem;
+}
+.boxOne h3{
+    font-size: .6rem;
+}
+.boxOne p{
+    font-size: 0.5rem;
+}
+.boxOne{
+    padding: .6rem;
+}
+}
+@media(max-width: 540px){
+    #homeText h1{
+        font-size: 1.77rem;
+    }
+    .boxOne h3{
+        font-size: .5rem;
+    }
+    .boxOne p{
+        font-size: 0.4rem;
+        line-height: 1;
+    }
+    .boxOne{
+        padding: .4rem;
+    }
+    .boxOne img{
+        margin-right: .5rem;
+        width: 20%;
+    }
+}
+@media(max-width: 405px){
+
+    #homeText h1{
+        font-size: 1.3rem;
+    }
+    #homeText span{
+        padding: 4px;
+        font-size: 0.4rem;
+    }
+    #homeText button{
+        padding: .2rem .2rem;
+        font-size: .5rem;
+    }
+    .homePage {
+        gap: 1rem;
+    }
+    .boxOne{
+        padding: 0;
+    }
+    .boxOne h3{
+        font-size: .4rem;
+    }
+    .boxOne p{
+        font-size: 0.4rem;
+    }
+    .boxOne{
+        padding: .4rem;
+    }
+}
